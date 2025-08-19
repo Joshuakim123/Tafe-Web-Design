@@ -1,2 +1,1 @@
-# Tafe-Web-Design
-Project for web design
+Class project for web design
