@@ -1,0 +1,7 @@
+ @media screen and (max-width: 48 )
+ .logo{
+    max-width: 70px;
+ }
+ .nav-button{
+    display: block;
+ }
