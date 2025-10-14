@@ -93,4 +93,21 @@ img {
 .nav-button img{
     width: 40px;
 }
-
+#search {
+    display: flex;
+    flex-direction: row;
+    min-width: 400px;
+    max-width: 100%;
+}
+#search input {
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px 0px 0px 5px;
+    flex: 1;
+}
+#search button{
+    padding: 10px;
+    border: solid 1px;
+    background-color: var(--hookers-green)
+    border-radiusL 0px 5px 5px 0px;
+}
