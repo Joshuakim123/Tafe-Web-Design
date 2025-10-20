@@ -6,6 +6,7 @@
     <link rel="icon" href="images/SiteIcon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -14,7 +15,7 @@
         <button class="nav-button" id="menu-button">
             <img src="images/burger.svg">
         </button>
-        <a href="index.html">
+        <a href="index.html" class="logo-link">
             <img class="logo" src="images/icon.jpg" alt="SiteIcon">
         </a>
         <!-- category menu -->
@@ -29,13 +30,15 @@
             <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
             <button type="submit">Search</button>
         </form>
-        <nav class="navigation">
-            <a href="account.html">Account</a>
+        <nav class="navigation" id="user-nav">
+            <a href="account.html">
+                <i class="fa-regular fa-face-meh"></i>
+            </a>
             <a href="wishlist.html">
-                <img src="images/Wishlist.svg" alt="Wishlist">
+                <i class="fa-solid fa-heart"></i>
             </a>
             <a href="cart.html">
-                <img src="images/Shopping.svg" alt="shopping cart">
+                <i class="fa-solid fa-bag-shopping"></i>
             </a>
         </nav>
     </header>

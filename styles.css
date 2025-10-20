@@ -111,3 +111,6 @@ img {
     background-color: var(--hookers-green)
     border-radiusL 0px 5px 5px 0px;
 }
+.navigation a:hover {
+  color: var(--alabaster);
+}
