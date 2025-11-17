@@ -4,6 +4,7 @@
     --ash-gray: hsla(98, 6%, 73%, 1);
     --cadet-gray: hsla(180, 6%, 56%, 1);
     --hookers-green: hsla(169, 10%, 25%, 1);
+    color-scheme: light dark;
 }
 
 body {
@@ -74,77 +75,101 @@ img {
     min-width: 30px;
     padding: 10px;
 }
+
 .navigation {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .navigation a {
     color: var(--hookers-green);
     text-decoration: none;
     padding: 10px;
 }
-.nav-button{
+.navigation a:hover {
+    color: var(--alabaster);
+}
+
+.nav-button {
     background-color: transparent;
     width: 44px;
     height: 44px;
     border-style: solid;
     border-color: var(--alabaster);
     border-radius: 5px;
+    display: none;
 }
-.nav-button img{
+
+.nav-button img {
     width: 40px;
 }
+
 #search {
     display: flex;
     flex-direction: row;
     min-width: 400px;
     max-width: 100%;
 }
+
 #search input {
     padding: 10px;
     border: solid 1px;
     border-radius: 5px 0px 0px 5px;
     flex: 1;
 }
-#search button{
+
+#search button {
     padding: 10px;
     border: solid 1px;
-    background-color: var(--hookers-green)
-    border-radiusL 0px 5px 5px 0px;
+    background-color: var(--hookers-green);
+    border-radius: 0px 5px 5px 0px;
 }
-.navigation a:hover {
-  color: var(--alabaster);
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
-/* ------------ carousel -----------*/
+
+/* -------------- carousel ----------------- */
 .slide {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 20vh;
+    min-height: 50vh;
     background-color: var(--timberwolf);
     background-size: cover;
     background-position: center;
 }
-.slide h2{
+.slide h2 {
     font-size: 3.5em;
-    text-shadow: -10px -10px 12px black;
-    color: white;
+    text-shadow: 0px 0px 0px black;
+    /* color: white; */
 }
-.slide button{
-    padding: 5px;
-    background-color: var(--alabaster);
+.slide button {
+    padding: 10px;
+    background-color: var(--hookers-green);
     min-width: 300px;
-    border: solid 1px var(--hookers-green);
+    border: solid 1px var(--alabaster);
     border-radius: 8px;
 }
 .slide:nth-child(1) {
-    background-image: url("images/halloween.jpg");
+    background-image: url("images/slides/pexels-ifreestock-619418.jpg") ;
+    color: orange;
 }
-.main-footer{
+
+nav a {
+    text-decoration: none;
+}
+
+.main-footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -152,26 +177,29 @@ img {
     padding: 20px 30px;
     margin-top: 30px;
 }
-.footer-nav{
+.footer-nav {
     display: flex;
     flex-direction: column;
 }
-.footer-nav a, .social-nav a, legal-nav a {
-    color: var(--alabaster)
+.footer-nav a, .social-nav a, .legal-nav a {
+    color: var(--alabaster);
+    padding: 5px;
 }
-.social-nav{
+.social-nav {
     display: flex;
     flex-direction: row;
     gap: 20px;
     font-size: 120%;
 }
-.legal-nav{
+.legal-nav {
     min-width: 100%;
     display: flex;
     flex-direction: row;
     gap: 3em;
+    flex-wrap: wrap;
 }
-/*  Content  */
+
+/* content */
 .card-container {
     display: flex;
     flex-direction: row;
@@ -186,8 +214,9 @@ img {
 .card {
     flex: 1;
     background-color: white;
-    border: 1px solid var( var(--cadet-gray));
+    border: 1px solid var(--cadet-gray);
     border-radius: 10px;
+    overflow: hidden;
 }
 .card button {
     min-width: 100%;
@@ -207,7 +236,27 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient( to right, red, yellow); */
-    background: radial-gradient(circle,brown, yellow);
-    
+    /* background: linear-gradient( 45deg,brown,yellow,green ); */
+    background: radial-gradient(circle,brown,yellow);
+    margin-top: 1em;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 0.5em;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.contact-form button {
+    min-width: auto;
+}
+.contact-details a {
+    color: var(--hookers-green);
+    font-size: medium;
 }
