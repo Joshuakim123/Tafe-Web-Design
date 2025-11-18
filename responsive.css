@@ -16,7 +16,6 @@
     }
     #search {
         min-width: 50px;
-        /* max-width: 170px; */
         flex: 1;
     }
     #search input {

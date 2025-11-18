@@ -1,19 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <link rel="icon" href="icon.jpg">
+    <title>Copyright Tiptoe Soles</title>
+    <link rel="icon" href="images/icon.jpg">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <h1>About Page</h1>
-        <img class="about-image" src="animals.jpg" alt="animals">
-    </nav>
+    <header class="page-header">
+        <button class="nav-button" id="menu-button">
+            <img src="images/burger.svg">
+        </button>
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="images/icon.jpg" alt="tiptoe soles logo">
+        </a>
+        <!-- category menu -->
+        
+        </nav>
+        <!-- search form -->
+        <form id="search" method="get" action="">
+            <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
+            <button type="submit">
+                <img src="images/Search icon.svg">
+            </button>
+        </form>
+        <nav class="navigation" id="user-nav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">Wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="sr-only">Shopping Bag</span>
+            </a>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="slide">
+            <h2>Halloween Sales</h2>
+            <button>Shop Halloween</button>
+        </div>
+        <div class="slide">
+            <h2>Black Friday</h2>
+            <button>Shop Black Friday</button>
+        </div>
+        <div class="slide">
+            <h2>Cyber Monday</h2>
+            <button>Shop Cyber Monday</button>
+        </div>
+        <div class="slide">
+            <h2>New Year</h2>
+            <button>Shop New Year</button>
+        </div>
+    </div>
+    <main class="main-content">
+        <div class="card-container policies">
+            <div class="card">
+                <div class="card-content">
+                    <h3>About us</h3>
+                    <policies>
+                        We strive to be a store where buyers can comfortably shop at 
+                    </policies>
+                </div>
+            </div>   
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>How we use your data</h3>
+                    <p>It is important that you understand how we look</p> 
+                    <p>after your personal data and how we make sure that we meet our</p> 
+                    <p>legal obligations to you under the data protection rules and regulations</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Our Vision</h3>
+                Our Vision at TipToe Soles is to be the go-to brand for all of Australia
+                <p>Eventually the World</p>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Policies</a>
+        </nav>
+        <nav class="social-nav">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+                <span class="sr-only">TikTok</span>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </nav>
+        <nav class="legal-nav">
+            <a href="#">Copyright</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy</a>
+        </nav>
+    </footer>
 </body>
 
 </html>

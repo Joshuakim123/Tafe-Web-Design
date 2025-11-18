@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: var(--timberwolf);
+    background-color: var(--hookers-green);
     color: var(--hookers-green);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -57,8 +57,6 @@ img {
     margin: auto;
     display: block;
 }
-
-/* header for page */
 .page-header {
     display: flex;
     flex-direction: row;
@@ -135,8 +133,6 @@ img {
     height: 1px;
     overflow: hidden;
 }
-
-/* --- carousel --- */
 .slide {
     width: 100vw;
     display: flex;
